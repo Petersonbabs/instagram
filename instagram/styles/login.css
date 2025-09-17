@@ -1,0 +1,115 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Form box */
+.form-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-family: 'Billabong', cursive; /* Instagram-like style */
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+form button {
+  background-color: #0095f6;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1877f2;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.divider p {
+  margin: 0 15px;
+  font-size: 13px;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+
+/* Facebook login */
+.fb-login {
+  display: block;
+  margin-top: 10px;
+  color: #385185;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.forgot {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #00376b;
+  text-decoration: none;
+}
+
+/* Signup box */
+.signup-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  text-align: center;
+}
+
+.signup-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}

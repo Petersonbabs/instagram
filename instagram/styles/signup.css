@@ -1,0 +1,96 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Signup form box */
+.form-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 40px 40px 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Billabong', cursive;
+  /* Instagram’s signature style */
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #8e8e8e;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+form button {
+  background-color: #0095f6;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1877f2;
+}
+
+/* Terms */
+.terms {
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Login box */
+.login-box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+

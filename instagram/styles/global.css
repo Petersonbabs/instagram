@@ -1,0 +1,11 @@
+#error-message {
+  font-size: 12px;
+  margin-top: .5rem;
+  color: red;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #0094f65d;
+  cursor: not-allowed;
+}

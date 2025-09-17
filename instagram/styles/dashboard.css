@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+/* Container: Two columns */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: 90vh;
+}
+
+/* Feeds */
+.feeds {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-img {
+    width: 100%;
+    display: block;
+}
+
+.post-actions {
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.caption {
+    padding: 0 12px 8px;
+    font-size: 14px;
+}
+
+.caption .username {
+    margin-right: 5px;
+}
+
+.time {
+    padding: 0 12px 12px;
+    font-size: 12px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+}
+
+/* Add post form */
+.add-post {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.add-post h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-post form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-post input {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.add-post button {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-post button:hover {
+    background-color: #1877f2;
+}

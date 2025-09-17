@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product Page</title>
+</head>
+
+<style>
+    .product {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .product img {
+        width: 200px;
+    }
+</style>
+
+<body>
+
+    <div class="product" id="product">
+        
+    </div>
+
+
+    <script>
+        const productEl = document.getElementById("product")
+        const params = new URLSearchParams(window.location.search)
+        const productId = params.get("id")
+        const baseUrl = "https://fakestoreapi.com"
+
+        async function getSingleProduct() {
+            // axios, 
+            const response = await fetch(`${baseUrl}/products/${productId}`)
+            const data = await response.json()
+            console.log(data)
+            productEl.innerHTML = `
+                <div>
+            <img src="${data.image}" alt="">
+            </div>
+            <div>
+                <h3>${data.title}</h3>
+                <span>$${data.price}</span>
+            </div>
+            `
+        }
+
+        getSingleProduct()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <h1>Movie Details</h1>
+    <div id="movie-details"></div>
+</body>
+
+<script>
+    const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYzhmNWEzZGY0NWQ4NWU1OTcyNjFmODAzMDQyZGQ4YyIsIm5iZiI6MTcwNzM0NTg1OC43MDQsInN1YiI6IjY1YzQwN2MyMTVjNjM2MDE4NDRjZGRjNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TUs5yIWWi4mzfhG7_0KPdAveiZJxNKPpi8uUaI1bFgc"
+    const baseUrl = "https://api.themoviedb.org/3"
+    const movieDetailsEl = document.getElementById("movie-details")
+    const options = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const params = new URLSearchParams(window.location.search)
+    const id = params.get("id")
+    console.log(id)
+
+    const getMovieDetails = async () => {
+        try {
+            const res = await fetch(`${baseUrl}/movie/${id}`, options)
+            const data = await res.json()
+            movieDetailsEl.innerHTML = `
+                <h3>${data.original_title}</h3>
+                <p>${data.taglinep}</p>
+            `
+            console.log(data)
+        } catch (error) {
+            console.log(error)
+        } finally {
+            console.log("Done!")
+        }
+    }
+
+    getMovieDetails()
+
+
+</script>
+
+</html>
