@@ -11,7 +11,7 @@ const signupBtnEl = document.getElementById("signup-btn")
 const users = JSON.parse(localStorage.getItem("users")) || []
 
 
-class USer {
+export class USer {
     constructor(email, firstName, lastName, password) {
         this.email = email,
             this.firstName = firstName,
